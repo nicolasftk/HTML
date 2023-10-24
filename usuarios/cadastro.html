@@ -40,7 +40,9 @@
 
         <!-- Campo Genero -->
 
-        <h4>Gênero <br><input type="radio" id="masculino" name="sexo" value="Masculino">
+        <h4>Gênero
+            <br>
+            <input type="radio" id="masculino" name="sexo" value="Masculino" required>
             <label for="masculino">Masculino</label>
             <br>
             <input type="radio" id="Feminino" name="sexo" value="Feminino">
@@ -51,8 +53,7 @@
         <!-- Genero de anime -->
 
         <h3>Gênero favorito de anime:</h3>
-        <select name="anime" id="anime">
-
+        <select name="anime" id="anime" required>
             <option value="Shonen">Shonen</option>
             <option value="Shoujo">Shoujo</option>
             <option value="Drama">Drama</option>
@@ -66,7 +67,7 @@
 
         <label for="termos"><small> <strong>Li e concordo com os termos de uso:</strong></small></label>
         <br>
-        <input type="checkbox" name="termos" id="termos">
+        <input type="checkbox" name="termos" id="termos" required>
         <br> <br>
         <input type="submit" value="Cadastrar Usuário">
     </form>

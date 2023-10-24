@@ -5,48 +5,87 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<style>
-		body {
-			background-color: slategrey;
+		* {
+			box-sizing: border-box;
+
 		}
 
-		h1 {
-			color: rgb(6, 31, 196);
+		.topo {
+			background-color: rgb(40, 38, 38);
+			padding: 1px;
+		}
+
+		.topo h1 {
+			color: rgb(232, 173, 249);
 			text-align: center;
 		}
 
-		p {
-			text-align: center;
-			color: rgb(20, 19, 20);
+		.menu {
+			background-color: black;
+			overflow: hidden;
+		}
+
+		.menu a {
+			color: rgb(255, 255, 255);
+			padding: 15px 16px;
+			float: left;
+			display: block;
+			text-decoration: none;
+		}
+
+		.coluna-50 {
+			color: blueviolet;
+			float: left;
 			font-size: larger;
-			font-family: Lobster, cursive;
-			font: 900;
+			font-family: cursive;
+			width: 50%;
+			padding: 15px 15px;
+		}
+
+		.coluna-50 img {
+			display: block;
+		}
+
+		body {
+			margin: 0;
+			background-color: slategrey;
 		}
 	</style>
 </head>
 
 <body>
-	<!-- Titulo da pagina -->
 
-	<h1>
-		Animaniacs
-		</h2>
-		<hr>
+	<!-- Topo da pagina -->
+	<header class="topo">
+		<h1>
+			Animaniacs
+			</h2>
+	</header>
 
-		<!-- Link das páginas -->
-
-		<h2 style="text-align: center;
-		">Menu</h2>
-		<a href="/usuarios/usuario.html" target="_self"> <b>USUÁRIOS</b></a>    <a href="/tabelas/tabela.html">
-			<b>TABELAS</b></a>   
+	<!-- Link das páginas -->
+	<nav class="menu">
+		<a href="/usuarios/usuario.html" target="_self"> <b>USUÁRIOS</b></a>
+		<a href="/tabelas/tabela.html"> <b>TABELAS</b></a>
 		<a href="usuarios/cadastro.html" target="_self"> <b>CADASTRO</b></a>
-		<HR>
-		</HR>
+	</nav>
+
+	<section class="coluna-50">
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ab repudiandae voluptas officiis saepe atque
 			molestias est, impedit perferendis, quidem soluta eum perspiciatis quisquam ad recusandae expedita porro
 			aspernatur eligendi.
 		</p>
-		<img src="https://img.goodfon.com/wallpaper/big/3/e5/ergo-proksi-ergo-proxy-demon.jpg" alt="Vincent" width="500"
-			</body>
+		<img src="https://img.goodfon.com/wallpaper/big/3/e5/ergo-proksi-ergo-proxy-demon.jpg" alt="Vincent">
+	</section>
+
+	<section class="coluna-50">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ab repudiandae voluptas officiis saepe atque
+			molestias est, impedit perferendis, quidem soluta eum perspiciatis quisquam ad recusandae expedita porro
+			aspernatur eligendi.
+		</p>
+		<img src="https://img.goodfon.com/wallpaper/big/3/e5/ergo-proksi-ergo-proxy-demon.jpg" alt="Vincent">
+	</section>
+</body>
 
 </html>
